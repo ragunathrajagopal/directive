@@ -47,3 +47,25 @@ Attribute Directives 
 ------------------------
 doesn’t change the DOM but can change the appearance or behavior of an element such as NgStyle.
 
+Directive and Components
+-----------------------------
+@Components
+----------------
+1. To register the components.
+2. To create UI widgets.
+3. To split to application into smaller parts.
+4. Only one component is used per DOM element.
+5. template and templateUrl are mandatory in the components.
+
+@Directive
+-------------------
+1. To register the directives.
+2. To Change or add existing DOM elements.
+3. To design a reusable components.
+4. More than one directive are used per DOM element.
+
+
+
+
+
+
