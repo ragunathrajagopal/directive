@@ -1,0 +1,67 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- directive
+DIRECTIVES:-
+1.) you want a similar functionality in all the components. 2.) you can call it anytime whenever you want that behavior of that function
+two types: structural and attribute directives
+Structural directives.
+2.) Attribute directive.
+Structural directives:- change the structure of the DOM by adding or removing elements. Attribute directive (like component directive):- alter the appearance or behavior of an existing element. -->
+<h4>Structural directives:-</h4>
+<h4>* ngIF </h4>
+<ng-container *ngIf="ifattr">
+<p> *ng if component rendring </p>
+</ng-container>
+<h4>* ngfor </h4>
+<span>  
+    <b>ngFor also provides some other values that can be bound to:</b>
+    <p>index - position of the current item in the iterable starting at 0</p>
+    <p>first - true if the current item is the first item in the iterable</p>
+        <p>last - true if the current item is the last item in the iterable</p>
+            <p>even - true if the current index is an even number</p>
+                <p>odd - true if the current index is an odd number</p>
+    </span>
+<ng-container *ngFor="let sData of fdata">
+  <p>{{sData.empID}}</p>
+  <p>{{sData.empName}}</p>
+</ng-container>
+<h4>* ngSwitch </h4>
+<ul *ngFor="let person of people"
+    [ngSwitch]="person.country">
+  <li *ngSwitchCase="'UK'"
+      class="text-success">{{ person.name }} ({{ person.country }})
+  </li>
+  <li *ngSwitchCase="'USA'"
+      class="text-primary">{{ person.name }} ({{ person.country }})
+  </li>
+  <li *ngSwitchCase="'HK'"
+      class="text-danger">{{ person.name }} ({{ person.country }})
+  </li>
+  <li *ngSwitchDefault
+      class="text-warning">{{ person.name }} ({{ person.country }})
+  </li>
+</ul>
+<h4>* ngClass </h4>
+<div ngClass= "activeLabel">
+    *ngClass added
+</div>
+
+<h4>Attribute Directive</h4>
+<div appBtnClrChange>
+    Using the directive selector
+</div>
+<br>
+<div appBtnClrChange inClr ="green" >
+    Passing input into the directive using @Input 
+</div>
+<br>
+<button mat-button appBtnClrChange (outClr)="darkviolet($event)" >Passing Output into the directive using @Output </button> 
+<div  >    
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<router-outlet></router-outlet>
