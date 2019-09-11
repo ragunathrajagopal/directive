@@ -2,16 +2,18 @@
 
 DIRECTIVES:-
 
-1.) you want a similar functionality in all the components.
-2.) you can call it anytime whenever you want that behavior of that function
+      Used to attach behavior to DOM elements. 
+      There are built-in directives to the framework
+      NgFor, NgIf, NgModel, NgClass
 
 two types: structural and attribute directives
 1) Structural directives.  
 2.) Attribute directive.
 
 Structural directives:-
-   change the structure of the DOM by adding or removing elements.
+   Can change the DOM layout by adding and removing DOM elements 
+   
 Attribute directive (like component directive):-
-    alter the appearance or behavior of an existing element.
+    doesn’t change the DOM but can change the appearance or behavior of an element such as NgStyle.
 
 
