@@ -25,3 +25,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Directives:-
+-------------------
+Used to attach behavior to DOM elements. 
+There are built-in directives to the framework
+NgFor, NgIf, NgModel, NgClass
+
+There are three kinds of directives:
+-----------------
+Components 
+----------
+@Component(): Is also  a directive with a template.
+
+Structural Directives
+-----------------------
+Can change the DOM layout by adding and removing DOM elements 
+
+Attribute Directives 
+------------------------
+doesn’t change the DOM but can change the appearance or behavior of an element such as NgStyle.
+
